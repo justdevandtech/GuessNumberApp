@@ -8,16 +8,16 @@ const secretNumber = Math.floor(Math.random() * 6 + 2);
 checkBtn.addEventListener('click', ()=>{
     if (userInput.value.length == 0) {
         popper.classList.add("active");
-        result.textContent = "Input field cannot be empty, please type in a number to process";
+        result.textContent = "Input field can't be empty, please type in a number to process";
     }else if (userInput.value != secretNumber) {
     popper.classList.add("active");
-    result.textContent = `${userInput.value}  is wrong! please try again ❌🤦‍♂️❌🤦‍♂️The correct answer at this monent is ${secretNumber}
+    result.textContent = `${userInput.value}  is wrong! please try again ❌🤦‍♂️❌🤦‍♂️The correct answer at this moment is ${secretNumber}
     ` 
     userInput.value = "";
 }else{
     console.log('yesss');
     popper.classList.add("active");
-    result.textContent = `${userInput.value} is correct 👏👏👏👏The correct answer at this monent is ${secretNumber}
+    result.textContent = `${userInput.value} is correct 👏👏👏👏The correct answer at this moment is ${secretNumber}
     ` 
     closePopper.innerText = "Play Again"
     closePopper.style.color = "black"

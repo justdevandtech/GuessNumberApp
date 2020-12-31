@@ -33,6 +33,7 @@ body {
     top: 150px;
     left: 50px;
     right: 50px;
+    border-radius: 5px;
 }
 
 @media (max-width: 600px){
