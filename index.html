@@ -6,34 +6,48 @@
     <title>Guess Number Game</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="header">
-        <h1>Guess a Number game</h1>
-    </div>
-  
-     <div class="input-container">
-     <input type="number" id="userinput" placeholder="Enter a number">
-     <button id="submitebtn">Check</button>
-    <!--  social media icons -->
-     <div id="social-media-links">
-         <a href="https://twitter.com/OvicialPauloski" target="_blank"><i class="fab fa-twitter"></i></a>
-         <a href="https://github.com/ophicial-pauloski" target="_blank"><i class="fab fa-github"></i></a>
-     </div>
-</div>
-<div class="result-poper">
-    <p id="result">Lorem ipsum dolor sit amet consectetur</p>
-    <button id="closebtn">Go Back</button>
-</div>
+    <div class="container">
+        <header class="mt-4 text-center">
+<h1>Giveaway for you😜😜</h1>
+        <p>Answer question correctly and win an airtime</p>
+        </header>
+        
+        <div class="game-container border p-3">
+       <input type="text" id="userinput" class="form-control" id="exampleFormControlInput1" placeholder="Type Your Answer here">
 
+       <button type="button" id="submitbtn" class="btn btn-success mt-2 mx-auto d-flex">Success</button>
+        </div>
 
-<!-- social media icons 
-    <div id="social-media-links">
-        <a href="https://twitter.com/OvicialPauloski" target="_blank"><i class="fab fa-twitter"></i></a>
+        <!-- social media icon -->
+        <div class="mt-4 w-50 mx-auto">
+            <div class="mx-auto w-50">
+<a href="https://twitter.com/OvicialPauloski" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://github.com/ophicial-pauloski" target="_blank"><i class="fab fa-github"></i></a>
-    </div> -->
+            </div>
+    </div>
+    </div>
+
+    <div class="popper-layer">
+        <div class="container">
+             <div class="poper p-3">
+            <h1 id="result">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, earum.</h1>
+        </div>
+            <hr>
+        </div>
+        <!-- close btn -->
+        <button type="button" id="closebtn" class="btn bg-danger d-flex mx-auto mt-4">close</button>
+    </div>
+
+
+ 
+
    
 
     <script src="app.js"></script>

@@ -5,11 +5,37 @@
 }
 
 body {
-    background-color: #f1f1f1;
+    background-color: #f5f5f5;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+    height: 100px;
 }
 
+.game-container {
+    margin-top: 50px;
+}
+
+.popper-layer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    height: 100vh;
+    visibility: hidden;
+}
+
+
+.active {
+    visibility: visible;
+}
+
+.poper {
+    margin-top: 150px;
+}
+/* 
 #header {
     margin-top: 50px;
 }
@@ -62,21 +88,7 @@ button {
     cursor: pointer;
 }
 
-.result-poper {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 50px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 222;
-    visibility: hidden;
-}
 
-.active {
-    visibility: visible;
-}
 
 .result-poper p {
     background-color: white;
@@ -109,3 +121,4 @@ button {
     background-color: rgb(139, 158, 158);
     border-radius: 3px;
 } 
+ */
