@@ -1,55 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess Number Game</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <header class="mt-4 text-center">
-<h1>Giveaway for you😜😜</h1>
+      <header class="mt-4 text-center">
+        <h1>Giveaway for you😜😜</h1>
         <p>Answer question correctly and win an airtime</p>
-        </header>
-        
-        <div class="game-container border p-3">
-       <input type="text" id="userinput" class="form-control" id="exampleFormControlInput1" placeholder="Type Your Answer here">
+      </header>
 
-       <button type="button" id="submitbtn" class="btn btn-success mt-2 mx-auto d-flex">Success</button>
+      <div class="game-container border p-3">
+        <div class="game-props">
+
+          <div class="d-flex m-2">
+      <span class="badge indexNumber px-3 text-center bg-secondary">1</span>
+      <span class="timeShow badge bg-danger mt-1 px-3">1</span>
+          </div>
+
+          <span id="displayquestion" class="border w-75 mx-auto p-2 m-2 rounded">Question</span>
+        <input
+          type="text"
+          id="userinput"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Type Your Answer here"
+        />
+
+        <button
+          type="button"
+          id="submitbtn"
+          class="btn btn-success mt-2 mx-auto d-flex"
+        >
+          Check
+        </button>
         </div>
+        <button class="startbtn shadow-sm">Start</button>
+      </div>
 
-        <!-- social media icon -->
-        <div class="mt-4 w-50 mx-auto">
-            <div class="mx-auto w-50">
-<a href="https://twitter.com/OvicialPauloski" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://github.com/ophicial-pauloski" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-    </div>
+      <!-- social media icon -->
+      <span>
+        <a href="https://twitter.com/OvicialPauloski" target="_blank"
+          ><i class="fab fa-twitter fs-2 text-success"></i
+        ></a>
+        <a href="https://github.com/ophicial-pauloski" target="_blank"
+          ><i class="fab fa-github fs-2 text-success"></i
+        ></a>
+      </span>
     </div>
 
     <div class="popper-layer">
-        <div class="container">
-             <div class="poper p-3">
-            <h1 id="result">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, earum.</h1>
+      <div class="container">
+        <div class="poper p-3">
+          <h1 class="bg-secondary p-3 rounded" id="result">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+            earum.
+          </h1>
         </div>
-            <hr>
-        </div>
-        <!-- close btn -->
-        <button type="button" id="closebtn" class="btn bg-danger d-flex mx-auto mt-4">close</button>
+        <hr />
+      </div>
+      <!-- close btn -->
+      <button
+        type="button"
+        id="closebtn"
+        class="btn bg-danger d-flex mx-auto mt-4"
+      >
+        close
+      </button>
     </div>
 
-
- 
-
-   
-
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
